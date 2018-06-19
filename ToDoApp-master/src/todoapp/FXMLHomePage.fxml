@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todoapp.FXMLHomePageController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="642.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="23.0" text="Choice Your Destiny" textFill="#ae63a8">
+         <font>
+            <Font name="Times New Roman Italic" size="68.0" />
+         </font>
+      </Label>
+      <Button fx:id="insert_button" layoutX="176.0" layoutY="172.0" mnemonicParsing="false" onAction="#insertButtonAction" prefHeight="77.0" prefWidth="115.0" text="Insert Tasks" textFill="#ff0404">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="view_button" layoutX="373.0" layoutY="172.0" mnemonicParsing="false" onAction="#viewButtonAction" prefHeight="77.0" prefWidth="115.0" text="View Tasks" textFill="RED">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <Label fx:id="task_label" layoutX="279.0" layoutY="329.0" />
+   </children>
+</AnchorPane>
